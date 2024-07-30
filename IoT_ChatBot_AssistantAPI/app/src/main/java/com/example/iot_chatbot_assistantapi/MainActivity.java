@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 "Math Tutor",
                 "You are a personal math tutor, write and run Python code to answer the question.",
                 Collections.singletonList(new OpenAIAssistantRequestModel.Tool("code_interpreter")), //選擇工具
-                "gpt-3.5-turbo-1106"
+                "gpt-4o-mini"
         );
 
         // 發送創建Assistant的請求
