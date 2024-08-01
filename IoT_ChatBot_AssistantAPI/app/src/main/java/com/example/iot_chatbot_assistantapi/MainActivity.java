@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         OpenAIAPIClient.OpenAIAPIService apiService = OpenAIAPIClient.create(this);
         OpenAIAssistantRequestModel assistantRequest = new OpenAIAssistantRequestModel(
                 "Math Tutor",
-                "You are a personal math tutor, write and run Python code to answer the question.",
+                "You are a personal math tutor, write and run code to answer the question. Please do not include formatting in the displayed results.",
                 Collections.singletonList(new OpenAIAssistantRequestModel.Tool("code_interpreter")), //選擇工具
                 "gpt-4o-mini"
         );
